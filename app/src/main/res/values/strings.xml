@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NineMenMorris</string>
+    <string name="player_turn">TextView</string>
+    <string name="new_game">New game</string>
+    <string name="field_1">1</string>
+    <string name="field_2">2</string>
+    <string name="field_3">3</string>
+    <string name="field_4">4</string>
+    <string name="field_5">5</string>
+    <string name="field_6">6</string>
+    <string name="field_7">7</string>
+    <string name="field_8">8</string>
+    <string name="field_9">9</string>
+    <string name="field_10">10</string>
+    <string name="field_11">11</string>
+    <string name="field_12">12</string>
+    <string name="field_13">13</string>
+    <string name="field_14">14</string>
+    <string name="field_15">15</string>
+    <string name="field_16">16</string>
+    <string name="field_17">17</string>
+    <string name="field_18">18</string>
+    <string name="field_19">19</string>
+    <string name="field_20">20</string>
+    <string name="field_21">21</string>
+    <string name="field_22">22</string>
+    <string name="field_23">23</string>
+    <string name="field_24">24</string>
+
+    <string name="BLUE">1</string>
+    <string name="RED">2</string>
+    <string name="Red_player_turn">Player Red Turn</string>
+    <string name="Blue_player_turn">Player Blue Turn</string>
+    <string name="Blue_player_removes">Remove a Red Marker</string>
+    <string name="Red_player_removes">Remove a Blue Marker</string>
+    <string name="Blue_player_wins">Player Blue Wins!</string>
+    <string name="Red_player_wins">Player Red Wins!</string>
+</resources>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview_player_turn"
+        android:layout_width="173dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/player_turn"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_gameboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gameboard" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_gameboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/red_marker_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/red_marker_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/red_marker_8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginRight="144dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/red_marker_7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginRight="144dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/red_marker_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/red_marker_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/red_marker_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/red_marker_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/red_marker_0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginRight="144dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/RED"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/red_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507"
+            app:srcCompat="@drawable/blue_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/blue_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/blue_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507"
+            app:srcCompat="@drawable/blue_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/blue_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blue_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blue_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blue_marker" />
+
+        <ImageView
+            android:id="@+id/blue_marker_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/BLUE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blue_marker" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/dummy_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_field_dummy"
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="372dp"
+                    android:layout_marginLeft="372dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/circle_field" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout_row_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/frame_field_6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_field"
+                    android:contentDescription="@string/field_6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"></FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_field_3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/circle_field"
+                    android:contentDescription="@string/field_3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/circle_field" />
+
+                <FrameLayout
+                    android:id="@+id/frame_field_9"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/circle_field"
+                    android:contentDescription="@string/field_9"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/circle_field" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout_row_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <FrameLayout
+                    android:id="@+id/frame_field_2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginLeft="68dp"
+                    android:background="@drawable/circle_field"
+                    android:contentDescription="@string/field_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/circle_field" />
+
+                <FrameLayout
+                    android:id="@+id/frame_field_5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_field"
+                    android:contentDescription="@string/field_5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/circle_field" />
+
+                <FrameLayout
+                    android:id="@+id/frame_field_8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="68dp"
+                    android:layout_marginRight="68dp"
+                    android:background="@drawable/circle_field"
+                    android:contentDescription="@string/field_8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/circle_field" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="116dp"
+                        android:layout_marginLeft="116dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_7"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="116dp"
+                        android:layout_marginRight="116dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp">
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_24"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_23"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="68dp"
+                        android:layout_marginLeft="68dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_23"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_22"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="116dp"
+                        android:layout_marginLeft="116dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_22"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_10"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="116dp"
+                        android:layout_marginRight="116dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_11"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="68dp"
+                        android:layout_marginRight="68dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_11"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_12"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_19"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="116dp"
+                        android:layout_marginLeft="116dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_19"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_16"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_13"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="116dp"
+                        android:layout_marginRight="116dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_13"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_20"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="68dp"
+                        android:layout_marginLeft="68dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_20"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_17"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_17"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_14"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="68dp"
+                        android:layout_marginRight="68dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_14"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_21"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_21"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_18"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_18"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/circle_field" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_field_15"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/circle_field"
+                        android:contentDescription="@string/field_15"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/circle_field" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
